@@ -43,7 +43,7 @@ const Content = () => {
             <p className="text-xl text-gray-800">
               As a Marketing Intern at Đạm Cà Mau, I received extensive training
               in market analysis, consumer behavior, and digital marketing
-              strategies, preparing me to support the company’s efforts in
+              strategies, preparing me to support the company&apos;s efforts in
               promoting agricultural products effectively.
             </p>
           </div>
@@ -85,7 +85,7 @@ const Content = () => {
             <p className="text-lg text-gray-500">
               This experience enhanced my understanding of marketing, from
               consumer insights and digital strategies to campaign execution and
-              performance analysis, supporting Đạm Cà Mau’s goal of
+              performance analysis, supporting Đạm Cà Mau&apos;s goal of
               strengthening its brand presence and reaching a broader, more
               engaged audience.
             </p>
@@ -113,8 +113,8 @@ const Content = () => {
               campaign to raise awareness about Ma Bó, a lesser-known region, by
               highlighting its unique culture, challenges, and potential.
               Through creative storytelling and targeted outreach, I not only
-              shared the region’s untold stories but also rallied support for
-              educational initiatives, ensuring that the trip was both
+              shared the region&apos;s untold stories but also rallied support
+              for educational initiatives, ensuring that the trip was both
               meaningful and sustainable. This experience allowed me to blend my
               passion for education with my strategic marketing skills, making a
               tangible difference in the lives of the students and the Ma Bó
@@ -149,8 +149,8 @@ const Content = () => {
             </div>
             <p className="text-base md:text-lg text-gray-600">
               At Tân Bình orphanage, I volunteered by assisting with the
-              children’s education and organizing recreational activities. I
-              helped create a safe and supportive environment, offering
+              children&apos;s education and organizing recreational activities.
+              I helped create a safe and supportive environment, offering
               emotional support and ensuring the children felt cared for. This
               experience fueled my passion for making a positive impact and
               reinforced my dedication to helping those in need.
@@ -196,7 +196,7 @@ const Content = () => {
                     Interpreter
                   </h1>
                   <p className="text-xl md:text-2xl text-gray-800">
-                    at Capstone’s Fall Fair
+                    at Capstone&apos;s Fall Fair
                   </p>
                 </div>
                 <Image
@@ -209,14 +209,14 @@ const Content = () => {
                 As an Interpreter at the Capstone Fall Fair for three months, I
                 was responsible for facilitating communication between diverse
                 participants and ensuring smooth interactions during the event.
-                My role involved translating the school admission’s messages to
-                the audience, along with event briefings, and actively promoting
-                the event to engage a wider audience.
+                My role involved translating the school admission&apos;s
+                messages to the audience, along with event briefings, and
+                actively promoting the event to engage a wider audience.
               </p>
             </div>
             <div className="space-y-8">
               <p className="text-base md:text-lg text-gray-600">
-                I conducted thorough research on the event’s themes and
+                I conducted thorough research on the event&apos;s themes and
                 objectives, enabling me to provide accurate and contextually
                 relevant translations. This required staying informed about
                 current trends and key topics, ensuring that both the language
@@ -369,14 +369,14 @@ const Content = () => {
             <p className="text-base md:text-lg text-gray-600">
               To foster engagement and creativity, I facilitated activities like
               the “Draw by Coffee Grounds” and a thought-provoking debate on the
-              topic: "Should Vietnam focus on developing new coffee varieties,
-              or should we maintain our position in the global coffee industry
-              with our traditional coffee?" These interactive sessions
-              encouraged teamwork, sparked meaningful discussions, and provided
-              a platform for participants to share their insights on the growth
-              potential of the Vietnamese coffee industry. Ultimately, the
-              workshop inspired participants to apply the new knowledge they
-              gained to real-world business scenarios.
+              topic: &quot;Should Vietnam focus on developing new coffee
+              varieties, or should we maintain our position in the global coffee
+              industry with our traditional coffee?&quot; These interactive
+              sessions encouraged teamwork, sparked meaningful discussions, and
+              provided a platform for participants to share their insights on
+              the growth potential of the Vietnamese coffee industry.
+              Ultimately, the workshop inspired participants to apply the new
+              knowledge they gained to real-world business scenarios.
             </p>
             <div className="flex flex-col md:flex-row gap-6">
               <div className="w-full xl:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -2,8 +2,6 @@ import images from "@/constants/images";
 import Image from "next/image";
 import React from "react";
 import Container from "../Container";
-import Link from "next/link";
-import PAnim from "../animation/PAnim";
 import DivAnim from "../animation/DivAnim";
 import Flipbook from "./Flipbook";
 

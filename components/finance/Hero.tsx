@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import Container from "../Container";
 
 export default function HeroProject() {
   return (
