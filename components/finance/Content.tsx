@@ -55,9 +55,8 @@ const Content = () => {
                 bookIframe={
                   <iframe
                     scrolling="no"
-                    className="bg-background w-full h-[800px] 
-              "
-                    src="https://heyzine.com/flip-book/9c68e7f34b.html"
+                    className="bg-background w-full h-[800px]"
+                    src="https://heyzine.com/flip-book/875c85a0b1.html"
                   ></iframe>
                 }
               />
@@ -69,12 +68,12 @@ const Content = () => {
               <Image
                 src={images.projectImg1}
                 alt="img"
-                className="rounded-3xl h-[622px]"
+                className="rounded-3xl h-[622px] object-cover"
               />
               <Image
                 src={images.projectImg2}
                 alt="img"
-                className="rounded-3xl w-[220px] h-[300px] absolute right-0 bottom-20 hidden xl:block"
+                className="rounded-3xl w-[220px] h-[300px] absolute right-0 bottom-20 hidden xl:block object-cover"
               />
             </div>
             <div className="w-full xl:w-1/2 space-y-8">

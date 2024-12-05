@@ -2,9 +2,9 @@ import logoLight from "@/public/images/hatrang/logo-light.png";
 import logoDark from "@/public/images/hatrang/logo-dark.png";
 
 import homeBannerImg from "@/public/images/hatrang/img-home.png";
-import navhome0 from "@/public/images/hatrang/navhome0.png";
-import navhome1 from "@/public/images/hatrang/navhome1.png";
-import navhome2 from "@/public/images/hatrang/navhome2.png";
+import navhome0 from "@/public/images/hatrang/home-card-1.jpg";
+import navhome1 from "@/public/images/hatrang/home-card-2.jpg";
+import navhome2 from "@/public/images/hatrang/home-card-3.jpg";
 
 import passionBanner1 from "@/public/images/hatrang/passion/passion-cover-1.png";
 import passionBanner2 from "@/public/images/hatrang/passion/passion-cover-2.png";

@@ -2,7 +2,7 @@
 
 import Container from "./Container";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import images from "@/constants/images";
 import Image from "next/image";
@@ -30,13 +30,29 @@ const navOptions = [
 const Header = () => {
   const pathname = usePathname();
 
-  const isLight = pathname !== "/"; // Check if the pathname is "/"
+  const [isLight, setIsLight] = useState(pathname !== "/");
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScrollTo = (id: string) => {
     router.push(id);
   };
+
+  useEffect(() => {
+    if (pathname === "/") {
+      const handleScroll = () => {
+        setIsLight(window.scrollY > 50); // Toggle `isLight` when scrolling past 50px
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setIsLight(true); // Ensure `isLight` is true for other pages
+    }
+  }, [pathname]);
 
   return (
     <div
@@ -52,7 +68,7 @@ const Header = () => {
               <Image
                 src={isLight ? images.logoLight : images.logoDark}
                 alt="logo"
-                className="w-full max-w-40 h-8"
+                className="w-40 h-8"
               />
             </div>
           </Link>
@@ -63,19 +79,22 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span
-              className={`block w-6 h-1 bg-black transition-transform ${
-                isMenuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
+              className={`block w-6 h-1 transition-transform 
+                ${!isLight ? "bg-white" : "bg-black"}
+                ${isMenuOpen ? "rotate-45 translate-y-2" : ""}
+              `}
             ></span>
             <span
-              className={`block w-6 h-1 bg-black transition-opacity ${
-                isMenuOpen ? "opacity-0" : "opacity-100"
-              }`}
+              className={`block w-6 h-1 transition-opacity 
+                ${!isLight ? "bg-white" : "bg-black"}
+                ${isMenuOpen ? "opacity-0" : "opacity-100"}
+              `}
             ></span>
             <span
-              className={`block w-6 h-1 bg-black transition-transform ${
-                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
+              className={`block w-6 h-1 transition-transform 
+                ${!isLight ? "bg-white" : "bg-black"}
+                ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}
+              `}
             ></span>
           </button>
 
@@ -124,9 +143,7 @@ const Header = () => {
                         className={`text-lg ${
                           pathname === nav.href
                             ? "text-primary-500 font-bold" // Active style
-                            : isLight
-                            ? "text-black"
-                            : "text-white"
+                            : "text-black"
                         }`}
                       >
                         {nav.title}
