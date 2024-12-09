@@ -15,7 +15,11 @@ const Card = ({ imageSource, title, href, description }: Props) => {
   return (
     <div className="w-full">
       <div className="w-full items-center gap-6 space-y-5">
-        <Image src={imageSource} alt="image-activity" className="w-full" />
+        <Image
+          src={imageSource}
+          alt="image-activity"
+          className="w-full rounded-2xl"
+        />
         <div>
           <p className="font-hatton text-gray-800 text-[24px] md:text-[32px]">
             {title}

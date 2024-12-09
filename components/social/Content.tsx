@@ -60,17 +60,17 @@ const Content = () => {
               <Image
                 src={images.extraImg2}
                 alt="img"
-                className="rounded-3xl h-[380px]"
+                className="rounded-3xl h-[380px] object-cover"
               />
               <Image
                 src={images.extraImg1}
                 alt="img"
-                className="rounded-3xl h-[460px] mt-0 md:mt-12"
+                className="rounded-3xl h-[460px] mt-0 md:mt-12 object-cover"
               />
               <Image
                 src={images.extraImg3}
                 alt="img"
-                className="rounded-3xl h-[380px]"
+                className="rounded-3xl h-[380px] object-cover"
               />
             </div>
             <p className="text-lg text-gray-500">

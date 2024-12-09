@@ -54,13 +54,23 @@ const Content = () => {
               <Flipbook
                 bookIframe={
                   <iframe
-                    scrolling="no"
-                    className="bg-background w-full h-[800px]"
-                    src="https://heyzine.com/flip-book/875c85a0b1.html"
+                    className="fp-iframe bg-transparent w-full h-[800px]"
+                    src="https://heyzine.com/flip-book/9c68e7f34b.html"
                   ></iframe>
                 }
               />
             </div>
+          </div>
+          <div>
+            <Flipbook
+              bookIframe={
+                <iframe
+                  // scrolling="no"
+                  className="fp-iframe bg-transparent w-full h-[1000px]"
+                  src="https://heyzine.com/flip-book/f85692442d.html"
+                ></iframe>
+              }
+            />
           </div>
           {/* Aspirations */}
           <div className="flex flex-col text-center md:text-start xl:flex-row items-start xl:items-center gap-8 py-32">

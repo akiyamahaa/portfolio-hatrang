@@ -1,6 +1,14 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 
 export default function HeroProject() {
+  const onScroll = () => {
+    const element = document.getElementById("project-content");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <div className="bgProject h-screen relative flex flex-col justify-center">
       <div className="px-20">
@@ -21,7 +29,10 @@ export default function HeroProject() {
               Partnering with Farmers and Businesses to Shape the Future of
               Agriculture.
             </p>
-            <div className="cursor-pointer hover:opacity-90 py-3 px-5 gap-2 items-center bg-primary-400 rounded-full flex flex-row">
+            <div
+              onClick={onScroll}
+              className="cursor-pointer hover:opacity-90 py-3 px-5 gap-2 items-center bg-primary-400 rounded-full flex flex-row"
+            >
               <p className="font-semibold text-base text-gray-800">
                 Explore more
               </p>
