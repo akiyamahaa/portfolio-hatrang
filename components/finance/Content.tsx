@@ -55,7 +55,7 @@ const Content = () => {
                 bookIframe={
                   <iframe
                     className="fp-iframe bg-transparent w-full h-[800px]"
-                    src="https://heyzine.com/flip-book/9c68e7f34b.html"
+                    src="https://heyzine.com/flip-book/bf0a783bf8.html"
                   ></iframe>
                 }
               />
