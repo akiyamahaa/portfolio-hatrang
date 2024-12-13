@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Container from "../Container";
 import DivAnim from "../animation/DivAnim";
+import VideoCard from "./VideoCard";
 
 const Content = () => {
   return (
@@ -70,6 +71,18 @@ const Content = () => {
               life, a source of happiness, tranquility, and inspiration to keep
               chasing my dreams.
             </p>
+          </div>
+          <div className="">
+            <VideoCard
+              videoSource="https://firebasestorage.googleapis.com/v0/b/vivuhanoi-expo.appspot.com/o/piano.mp4?alt=media&token=b92f1c99-3cf2-4fe2-9701-0628d69dce91"
+              caption="video"
+            />
+            {/* <video id="glass" width="320">
+              <source
+                src="https://firebasestorage.googleapis.com/v0/b/vivuhanoi-expo.appspot.com/o/lv_0_20241212190245.mp4?alt=media&token=efac65ba-2e49-4a23-87c7-fc279c969d87"
+                type="video/mp4"
+              />
+            </video> */}
           </div>
         </DivAnim>
       </Container>

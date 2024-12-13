@@ -8,7 +8,7 @@ type Props = {
 const VideoCard = ({ caption, videoSource }: Props) => {
   return (
     <div className="space-y-4">
-      <video className="w-full rounded-3xl" controls>
+      <video className="w-full md:rounded-3xl" controls>
         <source src={videoSource} type="video/mp4" />
         Your browser does not support HTML video.
       </video>
