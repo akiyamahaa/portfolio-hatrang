@@ -73,7 +73,7 @@ const Content = () => {
             />
           </div>
           {/* Aspirations */}
-          <div className="flex flex-col text-center md:text-start xl:flex-row items-start xl:items-center gap-8 py-32">
+          {/* <div className="flex flex-col text-center md:text-start xl:flex-row items-start xl:items-center gap-8 py-32">
             <div className="w-full xl:w-1/2 xl:pr-20 relative">
               <Image
                 src={images.projectImg1}
@@ -106,7 +106,7 @@ const Content = () => {
                 youth to lead the change.
               </p>
             </div>
-          </div>
+          </div> */}
         </DivAnim>
       </Container>
     </div>
