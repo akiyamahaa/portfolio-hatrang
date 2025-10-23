@@ -1,5 +1,3 @@
-import images from "@/constants/images";
-import Image from "next/image";
 import React from "react";
 import Container from "../Container";
 import DivAnim from "../animation/DivAnim";
